@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Context context = new Context();
         context.reg(Store.class);
-        context.reg(StartUI.class);
         context.reg(ConsoleInput.class);
+        context.reg(StartUI.class);
 
         StartUI ui = context.get(StartUI.class);
 
@@ -13,8 +13,6 @@ public class Main {
         ui.add("Yoda Jedi");
         ui.print();
 
-        ConsoleInput ci = context.get(ConsoleInput.class);
-
-        ci.askStr("How r u?");
+        ui.getInput().askStr("How r u?");
     }
 }
