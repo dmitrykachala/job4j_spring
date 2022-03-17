@@ -13,6 +13,6 @@ public class Main {
         ui.add("Yoda Jedi");
         ui.print();
 
-        ui.getInput().askStr("How r u?");
+        context.get(ConsoleInput.class).askStr("How r u?");
     }
 }

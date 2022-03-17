@@ -20,19 +20,4 @@ public class StartUI {
         }
     }
 
-    public Store getStore() {
-        return store;
-    }
-
-    public void setStore(Store store) {
-        this.store = store;
-    }
-
-    public ConsoleInput getInput() {
-        return input;
-    }
-
-    public void setInput(ConsoleInput input) {
-        this.input = input;
-    }
 }
